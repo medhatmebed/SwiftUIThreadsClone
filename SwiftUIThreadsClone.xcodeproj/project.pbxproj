@@ -11,6 +11,9 @@
 		8B8ACD412B74519600416DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8ACD402B74519600416DDC /* ContentView.swift */; };
 		8B8ACD432B74519900416DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8ACD422B74519900416DDC /* Assets.xcassets */; };
 		8B8ACD462B74519900416DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8ACD452B74519900416DDC /* Preview Assets.xcassets */; };
+		8B8ACD582B7466A100416DDC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8ACD572B7466A100416DDC /* LoginView.swift */; };
+		8B8ACD5A2B746B5900416DDC /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8ACD592B746B5900416DDC /* RegistrationView.swift */; };
+		8B8ACD5D2B746D3200416DDC /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8ACD5C2B746D3200416DDC /* ThreadsTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		8B8ACD402B74519600416DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B8ACD422B74519900416DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B8ACD452B74519900416DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B8ACD572B7466A100416DDC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8B8ACD592B746B5900416DDC /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		8B8ACD5C2B746D3200416DDC /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,13 @@
 		8B8ACD3D2B74519600416DDC /* SwiftUIThreadsClone */ = {
 			isa = PBXGroup;
 			children = (
-				8B8ACD3E2B74519600416DDC /* SwiftUIThreadsCloneApp.swift */,
-				8B8ACD402B74519600416DDC /* ContentView.swift */,
+				8B8ACD522B7457A200416DDC /* App */,
+				8B8ACD512B74579F00416DDC /* Core */,
+				8B8ACD502B74579C00416DDC /* Extensions */,
+				8B8ACD4F2B74579300416DDC /* Model */,
+				8B8ACD4E2B74578D00416DDC /* Service */,
+				8B8ACD532B7457DA00416DDC /* Utils */,
+				8B8ACD4D2B74578000416DDC /* New Group */,
 				8B8ACD422B74519900416DDC /* Assets.xcassets */,
 				8B8ACD442B74519900416DDC /* Preview Content */,
 			);
@@ -65,6 +76,92 @@
 				8B8ACD452B74519900416DDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B8ACD4D2B74578000416DDC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8B8ACD4E2B74578D00416DDC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8B8ACD4F2B74579300416DDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B8ACD502B74579C00416DDC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B8ACD512B74579F00416DDC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8B8ACD542B74665300416DDC /* Authentication */,
+				8B8ACD552B74666500416DDC /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8B8ACD522B7457A200416DDC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B8ACD3E2B74519600416DDC /* SwiftUIThreadsCloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8B8ACD532B7457DA00416DDC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B8ACD5B2B746D0500416DDC /* ViewModifiers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8B8ACD542B74665300416DDC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8B8ACD562B74669000416DDC /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8B8ACD552B74666500416DDC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8B8ACD402B74519600416DDC /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8B8ACD562B74669000416DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B8ACD572B7466A100416DDC /* LoginView.swift */,
+				8B8ACD592B746B5900416DDC /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B8ACD5B2B746D0500416DDC /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8ACD5C2B746D3200416DDC /* ThreadsTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8ACD582B7466A100416DDC /* LoginView.swift in Sources */,
 				8B8ACD412B74519600416DDC /* ContentView.swift in Sources */,
+				8B8ACD5D2B746D3200416DDC /* ThreadsTextFieldModifier.swift in Sources */,
 				8B8ACD3F2B74519600416DDC /* SwiftUIThreadsCloneApp.swift in Sources */,
+				8B8ACD5A2B746B5900416DDC /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
