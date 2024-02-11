@@ -50,7 +50,6 @@ struct LoginView: View {
                         .foregroundStyle(.white)
                         .frame(width: 352, height: 44)
                         .background(.black)
-                      //  .cornerRadius(8) it's deprecated user .clipShape
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
                 
